@@ -128,4 +128,43 @@
 
     <script src="app.js"></script>
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burdwan University Marks Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+           -webkit-appearance: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 class="heading">Burdwan University Percentage Calculator</h2>
+        <form id="marksForm" class="input-marks">
+            <label for="oddSem">Enter Odd Sem SGPA:</label>
+            <input type="number" id="oddSem" class="form-control mb-3">
+            <label for="evenSem">Enter Even Sem SGPA:</label>
+            <input type="number" id="evenSem" class="form-control mb-3">
+            <label for="totalMarks">Enter Total Marks:</label>
+            <input type="number" id="totalMarks"  class="form-control mb-3">
+            <div class="btns">
+                <button type="button" id="cal" class="btn btn-warning mb-3">Calculate</button>
+                <button type="reset" id="reset" class="btn btn-danger mb-3">Reset</button>
+            </div>
+        </form>
+        <div class="output mt-3">
+            <p id="one">Your Total Marks:</p>
+            <p id="two">Marks Obtained:</p>
+            <p id="three">Percentage:</p>
+            <p id="warning"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>

@@ -294,7 +294,106 @@ body {
 }
 
 .form-input[type=number] {
-    -moz-appearance: textfield;
+    -moz-appeabody {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow: auto;
+    color: #fff;
+    background-color: teal;
+}
+
+.box {
+    background-color: #0da764;
+    text-align: center;
+    height: 90%;
+    width: 70%;
+    border: 5px solid white;
+    border-radius: 25px;
+    margin: 5% auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.input-marks {
+    height: 40%;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 15px;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.output {
+    text-align: left;
+    height: 40%;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+input {
+    height: 2rem;
+    width: 100%;
+    color: #333;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: #dff0d8;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+#cal, #reset {
+    cursor: pointer;
+    margin: 0.5rem;
+    width: 8rem;
+}
+
+#warning {
+    color: #e54d42;
+    font-size: 1rem;
+    background-color: #ffcccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .box {
+        width: 95%;
+        padding: 10px;
+    }
+    .input-marks, .output {
+        width: 90%;
+    }
+    .input-marks {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .output {
+        font-size: 1.1rem;
+    }
+}
+rance: textfield;
 }
 
 /* Buttons */
